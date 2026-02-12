@@ -1,5 +1,6 @@
 "use client"
-import { gsap, useGSAP, ScrollTrigger } from "@/libs/gsap"
+
+import { gsap, useGSAP } from "@/libs/gsap"
 import { navItems } from '@/data/data'
 import { cn } from '@/libs/cn'
 import Image from 'next/image'

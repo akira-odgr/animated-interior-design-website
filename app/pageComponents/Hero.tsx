@@ -20,6 +20,9 @@ const Hero = () => {
                     <p className={cn("text", "shrink-0", "lg:ml-8")}>scroll down</p>
                 </div>
             </div>
+
+            {/* Gradient bg */}
+            <div className={cn("absolute bottom-0 left-0 w-full h-full bg-linear-to-t from-neutral-950 to-95% -z-10")} />
         </section>
     )
 }
