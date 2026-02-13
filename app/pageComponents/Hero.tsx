@@ -1,14 +1,26 @@
 "use client"
+import { useRef } from "react"
 import { cn } from '@/libs/cn'
+import { useSplitTextScrollAnimation } from "@/hooks/useSplitTextScrollAnimation"
 
 const Hero = () => {
+    const heroRef = useRef<HTMLElement | null>(null)
+
+    useSplitTextScrollAnimation({
+        trigger: ".hero-wrapper",
+        start: "top center",
+        scope: heroRef,
+    })
+
     return (
-        <section className={cn(
-            "hero-bg",
-            "bg-neutral-950 text-white relative min-h-screen flex flex-col z-20"
-        )}>
+        <section
+            ref={heroRef}
+            className={cn(
+                "hero-bg",
+                "bg-neutral-950 text-white relative min-h-screen flex flex-col z-20"
+            )}>
             <div className={cn("hero-wrapper", "container", "flex flex-1 flex-col justify-between py-10")}>
-                <h1 className={cn("font-semibold text-[90px] my-auto", "sm:text-9xl", "lg:text-[200px]")}>Desint</h1>
+                <h1 className={cn("title", "font-semibold text-[90px] my-auto", "sm:text-9xl", "lg:text-[200px]")}>Desint</h1>
 
                 {/* Wrapper */}
                 <div className={cn("flex flex-col space-y-5", "lg:flex-row lg:items-center lg:justify-between")}>
