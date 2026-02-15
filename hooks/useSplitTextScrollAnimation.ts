@@ -7,6 +7,7 @@ type UseSplitTextScrollAnimationOptions = {
     trigger: string;
     start?: string;
     scope?: RefObject<HTMLElement | null>;
+    markers?: boolean;
 };
 
 export const useSplitTextScrollAnimation = ({
@@ -15,6 +16,7 @@ export const useSplitTextScrollAnimation = ({
     trigger,
     start = "top center",
     scope,
+    markers,
 }: UseSplitTextScrollAnimationOptions) => {
     useGSAP(
         () => {
@@ -40,6 +42,7 @@ export const useSplitTextScrollAnimation = ({
                 scrollTrigger: {
                     trigger,
                     start,
+                    markers,
                 },
             });
 

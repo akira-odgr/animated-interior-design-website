@@ -3,6 +3,7 @@ import { Host_Grotesk } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/libs/cn";
 import Header from "@/components/Header";
+import CustomCursor from "@/components/CustomCursor";
 
 const hostGrotesk = Host_Grotesk({
   variable: "--font-geist-sans",
@@ -24,8 +25,9 @@ export default function RootLayout({
       <body
         className={`${hostGrotesk.className} antialiased`}
       >
+        <CustomCursor />
         <Header />
-        <main className={cn("min-h-screen")}>
+        <main className={cn("min-h-svh")}>
           {children}
         </main>
       </body>
