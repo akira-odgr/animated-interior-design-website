@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react'
 import About from "./pageComponents/About";
 import Hero from "./pageComponents/Hero";
 import Services from "./pageComponents/Services";
+import OurProcess from './pageComponents/OurProcess';
 
 function LenisProvider() {
   const lenisRef = useRef<LenisRef>(null)
@@ -32,6 +33,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <OurProcess />
     </>
   );
 }
