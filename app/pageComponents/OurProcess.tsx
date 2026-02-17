@@ -19,7 +19,7 @@ const OurProcess = () => {
             scrollTrigger: {
                 trigger: processRef.current,
                 start: "top center",
-                markers: true
+                // markers: true
             }
         })
 
@@ -49,7 +49,7 @@ const OurProcess = () => {
                     start: "top top",
                     scrub: true,
                     invalidateOnRefresh: true,
-                    markers: true
+                    // markers: true
                 },
                 ease: "none",
                 scale: scaleVal,
@@ -64,7 +64,7 @@ const OurProcess = () => {
                 pinSpacing: false,
                 id: "pin",
                 invalidateOnRefresh: true,
-                markers: true,
+                // markers: true,
             })
 
         })
@@ -73,7 +73,7 @@ const OurProcess = () => {
 
 
     return (
-        <section ref={processRef} className={cn("section", "h-[400svh]")}>
+        <section ref={processRef} className={cn("section")}>
             <div className={cn("container")}>
                 {/* Title */}
                 <div className={cn("flex flex-col items-start gap-3", "lg:flex-row lg:justify-between")}>

@@ -6,6 +6,7 @@ import About from "./pageComponents/About";
 import Hero from "./pageComponents/Hero";
 import Services from "./pageComponents/Services";
 import OurProcess from './pageComponents/OurProcess';
+import Blog from './pageComponents/Blog';
 
 function LenisProvider() {
   const lenisRef = useRef<LenisRef>(null)
@@ -34,6 +35,7 @@ export default function Home() {
       <About />
       <Services />
       <OurProcess />
+      <Blog />
     </>
   );
 }
