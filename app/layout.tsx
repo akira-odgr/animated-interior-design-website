@@ -3,6 +3,7 @@ import { Host_Grotesk } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/libs/cn";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 // import CustomCursor from "@/components/CustomCursor";
 
 const hostGrotesk = Host_Grotesk({
@@ -30,6 +31,7 @@ export default function RootLayout({
         <main className={cn("min-h-svh")}>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
